@@ -12,7 +12,7 @@ import json
 import time
 import gc
 
-def lifegame(past,x=64,y=32):
+def lifegame(past,xa=64,ya=32):
     now=[]
     decell={}
     for i in past:
@@ -30,7 +30,7 @@ def lifegame(past,x=64,y=32):
             if x in past:
                 jsj+=1
             else:
-                if x[0] in range(x) and x[1] in range(y):
+                if x[0] in range(xa) and x[1] in range(ya):
                     xxx=json.dumps(x)
                     if xxx in decell:
                         decell[xxx]+=1
