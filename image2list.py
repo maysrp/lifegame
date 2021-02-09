@@ -22,7 +22,7 @@ def pl(img,x=128,y=64,fr=False):
     if fr:
         f.write(json.dumps(fe))
         f.close()
-        return e
+        return fe
     else:
         f.write(json.dumps(e))
         f.close()
